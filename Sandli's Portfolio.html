@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandli - Developer Portfolio</title>
+    <link rel="stylesheet" href="Poppins.zip">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .portfolio {
+            width: 33px;
+            position: relative;
+            left: -120px;
+        }
+
+        body {
+            background-color: rgb(30, 27, 83);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(28, 20, 90);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(161, 161, 245);
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: aqua;
+            font-size: 45px;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .left:hover {
+            cursor: pointer;
+            font-size: 3rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 125px 0;
+            align-items: center;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .profile {
+            height: 330px;
+            width: 250px;
+            background-origin: padding-box;
+            border-radius: 20px;
+            border-style: groove;
+        }
+
+        .purple {
+            color: rgb(56, 206, 106);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            font-style: initial;
+            font-weight: bold;
+        }
+
+        #element {
+            color: rgb(184, 173, 74);
+        }
+
+        .SecondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .SecondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .SecondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 77px 0;
+            display: flex;
+        }
+
+        .SecondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 33px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-title:hover {
+            color: black;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .footer {
+            background-color: purple;
+        }
+
+        .footer {
+            display: flex;
+            margin-top: 350px;
+            height: 100px;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .institute {
+            color: aqua;
+            font-weight: bold;
+            margin: 0 100px;
+            margin-left: 130px;
+        }
+
+        .institute:hover {
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+
+        }
+
+        .leftSection2 {
+            margin: 0 100px;
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 130px;
+
+        }
+
+        .deg {
+            margin: 0 100px;
+            color: gray;
+            margin-left: 130px;
+        }
+
+        .gmail {
+            color: red;
+            font-size: 10px;
+        }
+
+        .name .mobile .highlight {
+            color: red;
+            font-size: 10px;
+        }
+
+        .name {
+            color: red;
+            font-size: 10px;
+        }
+
+        .mobile {
+            color: red;
+            font-size: 10px;
+        }
+
+        .name:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .gmail:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .mobile:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .highlight {
+            color: aqua;
+        }
+
+        .landmark {
+            width: 100px;
+            position: relative;
+            margin-left: 170px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project-desc {
+            margin: 0 100px;
+            color: gray;
+            font-size: 15px;
+            margin-left: 130px;
+        }
+
+        .description {
+            margin-left: 130px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(255, 157, 77);
+            font-style: italic;
+        }
+
+        .animation:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        .animation {
+            color: white;
+            font-weight: 300;
+            margin-left: 130px;
+        }
+
+        .image {
+            width: 100px;
+            height: auto;
+            margin-left: 500px;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sandli's Portfolio</div>
+            <img class="portfolio" src="portfolio.png" alt="">
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi! My name is <span class="purple">
+                    Sandli</span>
+                <div>
+                    and I am a passionate
+                </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img class="profile" src="IMG_6820.JPG" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="firstSection2">
+            <div class="leftSection2">
+                Basic Information
+                <span id="element"></span>
+            </div>
+            <div class="rightSection2">
+                <span class="rightSection2">
+                    <p class="deg">
+                        Persuing Bachelor's of technology from</p>
+                    <div class="institute">
+                        Maharaja Agrasen Institute Of Technology
+                    </div>
+                </span>
+            </div>
+        </section>
+        <hr>
+        <section class="firstSection2">
+            <div class="leftSection2">
+                Projects
+                <span id="element"></span>
+            </div>
+            <div class="rightSection2">
+                <div class="institute">
+                    RoboTrack
+
+                </div>
+                <a class="animation" href="https://www.youtube.com/watch?v=xR8LmATtwX0">Visit Animation of
+                    RoboTrack!</a>
+                <div>
+                    <p class="project-desc">Designing a human-following robot for various tasks
+                        Overview of the system's automatic mode operation and reliance on face and body detection.
+                    <p class="project-desc">Importance of efficient frameworks for simulating and testing advanced
+                        robotic systems to facilitate human-robot interactions.</p>
+                    <p class="project-desc">Acknowledgment of the lack of a dedicated Person-Following Differential
+                        Drive Robot package
+                        and its impact on the field</p>
+                    </p>
+                    <p></p>
+                </div>
+                <p class="description">1.Pose Estimation Model</p>
+                <img class="landmark" src="landmark.png" alt="">
+                <p class="description">2.Image Segmentation Model</p>
+                <img class="landmark" src="perception.jpg" alt="">
+                <p class="description">3.Technological Integration and Future Direction</p>
+                <img class="landmark" src="segmenter.png" alt="">
+                </span>
+            </div>
+        </section>
+        <hr>
+        <section class="firstSection2">
+            <div class="leftSection2">
+                Resume
+                <span id="element"></span>
+            </div>
+            <div class="rightSection2">
+
+                <a class="animation" href="resume.jpg">Click Here</a>
+                <img class="image" src="businessman-reading-resume-tea-cup-desk-close-up-44409805.webp" alt="">
+        </section>
+
+        <hr>
+        <section class="SecondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>
+                Skills
+            </h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="web-developer.webp" alt="">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">
+                        I had learnt a proper HTML and made many projects i.e. YouTube Clone, Spotify Clone etc.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="web-developer.webp" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Some basics of Node.js I'd learnt.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="web-developer.webp" alt="">
+                    <div class="vertical-title">
+                        DSA in C++
+                    </div>
+                    <div class="vertical-desc">
+                        Completed the course of DSA in C++ from Coding Blocks and now I have a good knowledge of it.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="web-developer.webp" alt="">
+                    <div class="vertical-title">
+                        Basics of Machine Learning
+                    </div>
+                    <div class="vertical-desc">
+                        In college itself i learnt some basic concepts of machine learning as my branch is Artificial
+                        Intelligence & Machine learning.
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="web-developer.webp" alt="">
+                    <div class="vertical-title">
+                        Python
+                    </div>
+                    <div class="vertical-desc">
+                        Have a basic knowledge of Python language
+                    </div>
+
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="First">
+                <h3 class="highlight">Sandli's Developer Portfolio</h3>
+            </div>
+
+            <div class="Second"></div>
+            <div class="Third"></div>
+            <div class="Fourth"></div>
+        </div>
+        <span>
+            <div class="copyright">&copy;www.sandliportfolio.com</div>
+        </span>
+
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Programmer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
